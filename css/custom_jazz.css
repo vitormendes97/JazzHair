@@ -1,0 +1,17 @@
+#about{
+	padding-bottom: 0;
+}
+
+.contato{
+	line-height: 1px;
+}
+
+.social_media{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.social_media > li{
+	display: inline-block;
+	margin-right: 5%;
+}
