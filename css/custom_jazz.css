@@ -15,3 +15,17 @@
 	display: inline-block;
 	margin-right: 5%;
 }
+
+#about{
+	margin-bottom: 7%;
+}
+
+.dateblock{
+	left: -61%;
+	border-bottom: 1px solid #fff;
+}
+
+.service_img
+{
+	height: 239px;
+}
