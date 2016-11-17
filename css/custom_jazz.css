@@ -29,3 +29,14 @@
 {
 	height: 239px;
 }
+
+.horario_atendimento
+{
+	font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.td-ltspacing
+{
+	letter-spacing: 2px;
+}
