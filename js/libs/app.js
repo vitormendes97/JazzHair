@@ -1,0 +1,1 @@
+var jazzapp = angular.module('jazzapp' , ['ui.bootstrap']);

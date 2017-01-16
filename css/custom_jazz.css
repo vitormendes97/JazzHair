@@ -1,0 +1,80 @@
+#about{
+	padding-bottom: 0;
+}
+
+.contato{
+	line-height: 1px;
+}
+
+.social_media{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.social_media > li{
+	display: inline-block;
+	margin-right: 5%;
+}
+
+#about{
+	margin-bottom: 7%;
+}
+
+.dateblock{
+	left: -61%;
+	border-bottom: 1px solid #fff;
+}
+
+.service_img
+{
+	height: 239px;
+}
+
+.horario_atendimento
+{
+	font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.td-ltspacing
+{
+	letter-spacing: 2px;
+}
+
+.servicoModal .modal-content {
+	border-radius: 0;
+	background-color: #f8f8f8;
+	font-family: Dosis, arial, sans-serif;
+}
+
+.servicoModal .modal-content .modal-header p {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.servicoModal .modal-content .modal-body {
+	padding-bottom: 0;
+}
+
+.servicoModal .modal-content .modal-footer button {
+	
+}
+
+.servicoModal .modal-content .modal-header h4 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, 
+.pagination>.active>span,
+ .pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+	background-color: #000 !important;
+	border-color: #000 !important;
+	color: #fff !important;
+}
+
+.pagination>li>a, .pagination>li>span {
+	color: #000 !important;
+}
