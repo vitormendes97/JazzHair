@@ -95,9 +95,9 @@
                                     Unhas curtas ou compridas? Esmalte claro ou aquele vermelho fatal? Não importa o seu estilo... Vamos cuidar das suas unhas para você brilhar em todos os lugares!
                                 </div>
                                 <div class="post-prev-more" style="margin-top: 5%;">
-                                    <a href="#" class="btn btn-mod btn-gray btn-round"
-                                    ng-click="changePage(nailService);" data-toggle="modal" data-target="#hair">Veja mais
-                                    <i class="fa fa-angle-right"></i></a>
+                                    <button type="button" data-toggle="modal" data-target="#hair"
+                                    class="btn btn-mod btn-gray btn-round" ng-click="changePage(nailService);">Veja mais
+                                    <i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -115,6 +115,11 @@
                                     Lorem ipsum dolor sit amet, c-r adipiscing elit. 
                                     In maximus ligula semper metus pellentesque mattis. 
                                     Maecenas  volutpat, diam enim.
+                                </div>
+                                  <div class="post-prev-more" style="margin-top: 5%;">
+                                    <button type="button" data-toggle="modal" data-target="#hair"
+                                    class="btn btn-mod btn-gray btn-round" ng-click="changePage(depil);">Veja mais
+                                    <i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -264,6 +269,11 @@
                                 <div class="alt-features-descr align-left text_config">
                                     O atendimento ao público masculino é feito com o mesmo cuidado e qualificação dedicados às clientes. Modelagem de barba e corte masculinos estão entre as especialidades da casa.
                                 </div>
+                                <!-- <div class="post-prev-more" style="margin-top: 5%;">
+                                    <button type="button" data-toggle="modal" data-target="#hair"
+                                    class="btn btn-mod btn-gray btn-round" ng-click="changePage(menService);">Veja mais
+                                    <i class="fa fa-angle-right"></i></button>
+                                </div> -->
                             </div>
                         </div>
                         <!-- End Logo Item -->
@@ -277,6 +287,11 @@
                                 <h3 class="alt-features-title font-alt text_config" style="text-align: center;">Maquiagem</h3>
                                 <div class="alt-features-descr align-left">
                                    Se você quer valorizar os pontos fortes do seu rosto ou arrasar em qualquer ocasião, a maquiagem é fundamental. Nós amamos maquiar e estamos sempre por dentro das novidades e tendências para deixar você ainda mais linda!
+                                </div>
+                                <div class="post-prev-more" style="margin-top: 5%;">
+                                    <button type="button" data-toggle="modal" data-target="#hair"
+                                    class="btn btn-mod btn-gray btn-round" ng-click="changePage(makeService);">Veja mais
+                                    <i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -295,6 +310,11 @@
                                     sabemos o quão importante é mante-la alinhada com seu dia a dia.
                                     Aqui usamos as mais modernas técnicas para valorizar sua beleza!
                                 </div>
+                               <!--  <div class="post-prev-more" style="margin-top: 5%;">
+                                    <button type="button" data-toggle="modal" data-target="#hair"
+                                    class="btn btn-mod btn-gray btn-round" ng-click="changePage(esthetics);">Veja mais
+                                    <i class="fa fa-angle-right"></i></button>
+                                </div> -->
 <!-- 
                                 Todo mundo se preocupa com sua forma. Todos querem ser percebidos como belo, lindo e atraente. Conheça os serviços oferecidos pela Morena Mulher que vão valorizar sua beleza. -->
 
@@ -323,15 +343,16 @@
                 <thead>
                     <tr>
                         <th>Serviço</th>
+                        <th>Preço</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="service in filteredService">
                     <td class="td-ltspacing">
                             {{service.servico}}
-                            <div class="small">
-                               {{service.valor | currency:'R$':true:'1.2.-3'}}
-                            </div>
+                    </td>
+                    <td class="td-ltspacing">
+                      R${{service.valor | number: 2}}
                     </td>
                      <!--    <td></td>
                         <td></td> -->
@@ -339,14 +360,16 @@
                 </tbody>
             </table>
         </div>
-        <nav aria-label="Page navigation">
+        <div class="col-sm-8 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <nav aria-label="Page navigation">
              <ul uib-pagination total-items="controll.length" 
              ng-model="currentPage" ng-change="changePage(controll)" direction-links="false">
              </ul>
         </nav>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-mod btn-gray btn-round" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-mod btn-gray btn-round" data-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
